@@ -274,6 +274,32 @@ body {
   line-height: 1.71;
 }
 
+.skils-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondery-bkg-color);
+}
+
+.skils-item:nth-child(1)::before {
+  background-image: url(../icon/antenna.svg);
+}
+
+.skils-item:nth-child(2)::before {
+  background-image: url(../icon/clock.svg);
+}
+
+.skils-item:nth-child(3)::before {
+  background-image: url(../icon/diagram.svg);
+}
+
+.skils-item:nth-child(4)::before {
+  background-image: url(../icon/astronaut.svg);
+}
+
 /* /----------------* Чем мы занимаемся *------------/  */
 
 .works {
