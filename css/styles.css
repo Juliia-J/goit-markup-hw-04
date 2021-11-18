@@ -101,17 +101,24 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-mail {
+.icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: var(--title-text-color);
+  fill: var(--title-text-color);
 }
 
-.header-tel {
+.icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--title-text-color);
+}
+.icon-mail:hover {
+  fill: var(--accent-color);
+}
+.icon-tel:hover {
+  fill: var(--accent-color);
 }
 
 /* Main-nav */
