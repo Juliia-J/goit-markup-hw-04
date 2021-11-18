@@ -101,6 +101,19 @@ body {
   color: var(--primary-text-color);
 }
 
+.header-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  color: var(--title-text-color);
+}
+
+.header-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 /* Main-nav */
 
 .main-nav {
@@ -253,7 +266,7 @@ body {
   justify-content: space-between;
 }
 
-.skils-examples .item:not(:last-child) {
+.skils-examples .skils-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -282,6 +295,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondery-bkg-color);
+  margin-bottom: 30px;
 }
 
 .skils-item:nth-child(1)::before {
@@ -492,4 +506,49 @@ body {
 
 .mail {
   margin-bottom: 9px;
+}
+
+.network {
+  margin-left: 516px;
+}
+
+.network-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.network-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.network-link:hover {
+  background-color: var(--accent-color);
+}
+
+.instagram {
+  background-image: url(../icon/instagram.svg);
+}
+
+.twitter {
+  background-image: url(../icon/twitter.svg);
+}
+
+.facebook {
+  background-image: url(../icon/f.svg);
+}
+
+.in {
+  background-image: url(../icon/in.svg);
 }
