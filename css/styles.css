@@ -3,6 +3,7 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --text-footer-color: rgba(255, 255, 255, 0.6);
+  --font-icon-footer: rgba(255, 255, 255, 0.1);
   --text-white: #ffffff;
 
   --primary-bkg-color: #e5e5e5;
@@ -301,12 +302,12 @@ body {
 .skils-item::before {
   display: block;
   content: "";
-  height: 120px;
+  height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondery-bkg-color);
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 .skils-item:nth-child(1)::before {
@@ -340,7 +341,7 @@ body {
 }
 
 .works-title,
-.command-title {
+.commands-title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--primary-text-color);
@@ -372,21 +373,26 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.command-item:hover {
+  border: 1px solid var(--accent-color);
+}
+
 .command-item:not(:last-child) {
   margin-right: 30px;
   background-color: var(--font-bkg-white-color);
 }
-.command-img h3 {
+.command-title {
   margin-top: 30px;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
 }
-.command-img p {
+.command-text {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.9;
@@ -466,6 +472,10 @@ body {
   margin-bottom: 0;
 }
 
+.flex-element:hover {
+  border: 1px solid var(--accent-color);
+}
+
 .flex-element h2 {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -536,6 +546,9 @@ body {
 .klients-icon:focus {
   fill: var(--accent-color);
 }
+.klients-item:hover {
+  border: 1px solid var(--accent-color);
+}
 
 /*--------------------- Подвал------------------------ */
 
@@ -585,6 +598,9 @@ body {
 .mail {
   margin-bottom: 9px;
 }
+.network {
+  display: flex;
+}
 
 .network-title {
   font-weight: bold;
@@ -596,14 +612,39 @@ body {
   color: #ffffff;
 }
 
-.icon-soc-foot {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  fill: rgba(255, 255, 255, 0.1);
+.footer-list {
+  display: flex;
+  justify-content: center;
 }
 
-.icon-soc-foot:hover,
+.footer-item {
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.link-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--font-icon-footer);
+}
+.footer-item + .footer-item {
+  margin-left: 10px;
+}
+
+/* .icon-soc-foot { */
+/* width: 44px; */
+/* height: 44px; */
+/* margin-right: 10px; */
+/* fill: rgba(255, 255, 255, 0.1); */
+/* } */
+
+.link-icon:hover,
 .icon-soc-foot:focus {
   fill: var(--accent-color);
 }
