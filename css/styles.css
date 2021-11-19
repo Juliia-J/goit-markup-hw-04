@@ -105,14 +105,14 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--title-text-color);
+  fill: currentColor;
 }
 
 .icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--title-text-color);
+  fill: currentColor;
 }
 .icon-mail:hover {
   fill: var(--accent-color);
@@ -155,6 +155,7 @@ body {
 }
 .cont-nav {
   display: flex;
+  align-items: baseline;
   margin-left: auto;
 }
 
@@ -347,6 +348,23 @@ body {
 }
 
 /* Команда */
+
+.icon-soc {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  fill: var(--font-bkg-white-color);
+}
+
+.icon-soc:hover {
+  fill: var(--accent-color);
+}
+
+.inst {
+  margin-left: 32px;
+}
+
 .commands {
   background-color: var(--secondery-bkg-color);
   padding-top: 94px;
