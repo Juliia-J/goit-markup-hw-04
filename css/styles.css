@@ -10,6 +10,7 @@
   --secondery-bkg-color: #f5f4fa;
   --font-bkg-color: #2f303a;
   --font-bkg-white-color: #ffffff;
+  --font-icon: #afb1b8;
 }
 
 p,
@@ -114,10 +115,12 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-.icon-mail:hover {
+.icon-mail:hover,
+.icon-mail:focus {
   fill: var(--accent-color);
 }
-.icon-tel:hover {
+.icon-tel:hover,
+.icon-tel:focus {
   fill: var(--accent-color);
 }
 
@@ -349,18 +352,6 @@ body {
 
 /* Команда */
 
-.icon-soc {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-  fill: var(--font-bkg-white-color);
-}
-
-.icon-soc:hover {
-  fill: var(--accent-color);
-}
-
 .inst {
   margin-left: 32px;
 }
@@ -385,7 +376,6 @@ body {
   margin-right: 30px;
   background-color: var(--font-bkg-white-color);
 }
-
 .command-img h3 {
   margin-top: 30px;
   color: var(--primary-text-color);
@@ -401,6 +391,19 @@ body {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
+}
+
+.icon-soc {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  fill: var(--font-bkg-white-color);
+}
+
+.icon-soc:hover,
+.icon-soc:focus {
+  fill: var(--accent-color);
 }
 
 /* -------Наши работы--------- */
@@ -479,9 +482,59 @@ body {
   margin-left: 24px;
   font-size: 16px;
   line-height: 30px;
-  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+}
+
+/*-----------------Постоянные клиенты---------------- */
+
+.klient {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.klients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--primary-text-color);
+}
+.klients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.klients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--font-icon);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.klients-item + .klients-item {
+  margin-left: 30px;
+}
+
+.klients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-bkg-color);
+}
+
+.klients-icon {
+  fill: var(--font-icon);
+}
+
+.klients-icon:hover,
+.klients-icon:focus {
+  fill: var(--accent-color);
 }
 
 /*--------------------- Подвал------------------------ */
@@ -533,10 +586,6 @@ body {
   margin-bottom: 9px;
 }
 
-.network {
-  margin-left: 516px;
-}
-
 .network-title {
   font-weight: bold;
   font-size: 14px;
@@ -547,33 +596,14 @@ body {
   color: #ffffff;
 }
 
-.network-link {
-  display: inline-block;
+.icon-soc-foot {
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
+  margin-right: 10px;
+  fill: rgba(255, 255, 255, 0.1);
 }
 
-.network-link:hover {
-  background-color: var(--accent-color);
-}
-
-.instagram {
-  background-image: url(../icon/instagram.svg);
-}
-
-.twitter {
-  background-image: url(../icon/twitter.svg);
-}
-
-.facebook {
-  background-image: url(../icon/f.svg);
-}
-
-.in {
-  background-image: url(../icon/in.svg);
+.icon-soc-foot:hover,
+.icon-soc-foot:focus {
+  fill: var(--accent-color);
 }
