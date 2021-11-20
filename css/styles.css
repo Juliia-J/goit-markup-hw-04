@@ -351,10 +351,6 @@ body {
 
 /* Команда */
 
-.inst {
-  margin-left: 32px;
-}
-
 .commands {
   background-color: var(--secondery-bkg-color);
   padding-top: 94px;
@@ -397,16 +393,35 @@ body {
   text-align: center;
 }
 
-.icon-soc {
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+.soc-item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
   margin-bottom: 30px;
-  fill: var(--font-bkg-white-color);
 }
 
-.icon-soc:hover,
-.icon-soc:focus {
+.command-link-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--font-icon-footer);
+  background-color: var(--font-bkg-white-color);
+}
+
+.soc-item + .soc-item {
+  margin-left: 10px;
+}
+
+.command-link-icon:hover,
+.command-link-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -472,8 +487,7 @@ body {
 
 .image:hover,
 .image:focus {
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
+  text-decoration: underline 1px var(--accent-color);
 }
 
 .flex-element:hover,
