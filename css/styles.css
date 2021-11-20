@@ -472,12 +472,14 @@ body {
 
 .image:hover,
 .image:focus {
-  text-decoration: underline 2px var(--accent-color);
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
 }
 
 .flex-element:hover,
 .flex-element:focus {
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
 }
 
 .image-title {
